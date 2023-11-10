@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #ffffff;
+
+body {
+  font: 100% $font-stack;
+  background: $primary-color;
+}
