@@ -1,0 +1,13 @@
+.button-light-purple {
+  @apply text-center w-full px-3 text-xl py-3 rounded-3xl font-medium
+}
+
+@mixin hover-transition {
+  @apply hover:duration-300
+}
+
+.type-light-purple {
+  @include hover-transition;
+  @apply bg-light_purple
+  hover:bg-purple
+}
