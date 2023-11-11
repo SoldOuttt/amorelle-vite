@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 export const Landing: React.FC = () => {
     return (
         <div className={cx(styles.landing)}>
-            <div className={cx('flex', 'flex-col', 'items-center', 'h-full', 'justify-between')}>
+            <div className={cx('flex', 'flex-col', 'items-center', 'gap-y-24')}>
                 <Logo />
                 <MascotLaugh />
                 <div className={cx('flex', 'flex-col', 'gap-y-2.5', 'w-full')}>
