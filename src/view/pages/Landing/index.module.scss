@@ -1,4 +1,85 @@
 .landing {
   //@apply bg-purple h-[851px] w-[393px] container py-12 px-8
-  @apply bg-purple h-screen py-9 px-8
+  @apply bg-purple h-full py-9 px-8
+}
+
+
+
+$gray-base: #333333;
+$gray-15: #D9D9D9;
+$gray-10: #E5E5E5;
+$gray-05: #F2F2F2;
+$gray-02: #FAFAFA;
+$white: #8c1919;
+
+$light-gray: #F8F8FA;
+$light-gray-bright: #FAFAFC;
+$light-gray-brighter: #FCFCFD;
+
+
+.panel { //Panel default layout
+  border-radius: 2px;
+  background-color: $white;
+  border: 1px solid $gray-15;
+  width: 800px;
+  margin: auto;
+
+  .panel-heading {
+    padding: 10px 10px 10px 20px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    color: $gray-base;
+    border-bottom: 1px solid $gray-10;
+  }
+  .panel-body { // Default Panel body
+    padding:20px;
+  }
+}
+html, body {
+  background-color: $light-gray;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+
+////////////////////////////////////////////////////////////////////////
+/////////////////////   NEW CSS ////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+.mask {
+  background: $light-gray;
+  background: linear-gradient(to right, $light-gray 8%, $white 18%, $light-gray 33%);
+  background-size: 400%;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  animation-timing-function: linear;
+}
+.mask-title {
+  height:18px;
+  margin: 6px 0;
+  width: 40%
+}
+.mask-label {
+  height: 12px;
+  width: 30%;
+  margin-bottom: 8px;
+}
+.mask-input {
+  height: 34px;
+  width: 100%;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes wave {
+  0% { background-position: 50% 0 }
+  100% { background-position: -50% 0 }
 }
